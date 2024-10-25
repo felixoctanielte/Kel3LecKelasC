@@ -1,0 +1,119 @@
+.admin-dashboard-header {
+    background-color: #45a049;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.admin-dashboard-nav {
+    background-color: #45a049;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.admin-dashboard-nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.admin-dashboard-nav-item {
+    margin: 0;
+}
+
+.admin-dashboard-nav-link, .admin-dashboard-nav-link-button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: none;
+}
+
+.admin-dashboard-nav-link:hover, .admin-dashboard-nav-link-button:hover {
+    background-color: #3e8e41;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .admin-dashboard-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .admin-dashboard-nav.active {
+        display: flex;
+    }
+
+    .admin-dashboard-nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .admin-dashboard-nav-link, .admin-dashboard-nav-link-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+}
+
+.admin-dashboard-events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.admin-dashboard-table-header {
+    background-color: #45a049;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.admin-dashboard-table-data {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-dashboard-events-table tr:hover {
+    background-color: #f1f1f1;
+}
